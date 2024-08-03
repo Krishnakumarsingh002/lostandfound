@@ -1,0 +1,19 @@
+/* CategoriesList.css */
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+}
+
+.categories-list li {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categories-list li:hover {
+  background-color: #e9ecef;
+}

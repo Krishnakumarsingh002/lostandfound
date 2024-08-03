@@ -1,0 +1,22 @@
+.history-content {
+    padding: 20px;
+    margin-top: 60px; /* Adjust based on the height of your navbar */
+  }
+  
+  .history-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .items-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .no-items {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+  }
+  

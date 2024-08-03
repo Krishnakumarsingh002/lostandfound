@@ -1,0 +1,23 @@
+/* Home.css */
+
+
+.home-content {
+  display: flex;
+    width: 100%;
+    margin: 100px 25px;
+    align-items: start;
+    
+}
+
+.category-section {
+  flex: 1;
+  max-width: 18%;
+  margin-right: 20px;
+}
+
+.items-section {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
