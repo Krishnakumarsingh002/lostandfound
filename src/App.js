@@ -9,7 +9,6 @@ import History from './components/History';
 
 const App = () => {
 
-  
 
   return (
     <>

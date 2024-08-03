@@ -8,6 +8,7 @@ const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [homeButton, setHomeButton] = useState(false);
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -22,12 +23,10 @@ const Login = () => {
         // Store login status in localStorage
         localStorage.setItem('loggedIn', 'true');
         localStorage.setItem('username', username);
-        window.location.reload();
-        setTimeout(() => {
-            
-            navigate('/');
-        }, 1000);
-        console.log('Navigated to /home');
+
+        setError("User logged in successfully")
+        setHomeButton(true);
+
       }
       else{
         console.log('Login failed');
@@ -71,6 +70,9 @@ const Login = () => {
         <button type="submit">Login</button>
 
         <button type="button" onClick={goToSignUp}>Register</button>
+
+        {homeButton && <button type="button" onClick={() => {window.location.reload();navigate('/')}}>Home</button>}
+
         {error && <p>{error}</p>}
       </form>
     </div>
