@@ -22,12 +22,11 @@ const Login = () => {
         // Store login status in localStorage
         localStorage.setItem('loggedIn', 'true');
         localStorage.setItem('username', username);
- 
         window.location.reload();
         setTimeout(() => {
             
             navigate('/');
-        }, 200);
+        }, 1000);
         console.log('Navigated to /home');
       }
       else{
