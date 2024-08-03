@@ -71,7 +71,7 @@ const Login = () => {
 
         <button type="button" onClick={goToSignUp}>Register</button>
 
-        {homeButton && <button type="button" onClick={() => {window.location.reload();navigate('/')}}>Home</button>}
+        {homeButton && <button type="button" onClick={() => navigate(0)}>Home</button>}
 
         {error && <p>{error}</p>}
       </form>
