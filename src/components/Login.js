@@ -26,7 +26,7 @@ const Login = () => {
         window.location.reload();
         setTimeout(() => {
             
-            navigate('/home');
+            navigate('/');
         }, 200);
         console.log('Navigated to /home');
       }
